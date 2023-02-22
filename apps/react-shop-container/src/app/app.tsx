@@ -1,25 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
+import { ThemeProvider } from '@emotion/react';
+import { appTheme } from '@palaks-shop/react-shop-common';
 
-import NxWelcome from './nx-welcome';
-
-import { Banner } from '@palaks-shop/react-shop-common';
-import { exampleProducts } from '@palaks-shop/react-shop-common';
+import Landing from './pages/landing/landing';
 
 const App = () => (
-  <>
-    <NxWelcome title="react-shop-container" />
-
-    <Banner text="Hello World"></Banner>
-
-    <ul>
-      {exampleProducts.map((product) => (
-        <li key={product.id}>
-          <strong>{product.name}</strong> Price: {product.price}
-        </li>
-      ))}
-    </ul>
-  </>
+  <ThemeProvider theme={appTheme}>
+    <Landing></Landing>
+  </ThemeProvider>
 );
 
 export default App;
