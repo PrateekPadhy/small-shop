@@ -1,5 +1,6 @@
 export * from './lib/components/header/header';
 export * from './lib/components/banner/banner';
+export * from './lib/components/image-card/image-card';
 export * from './lib/react-shop-common';
 
 // Constants
