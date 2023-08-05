@@ -1,6 +1,11 @@
-import { Header, ImageCard } from '@palaks-shop/react-shop-common';
+import {
+  Header,
+  ImageCard,
+  OurProductRangeMenu,
+} from '@palaks-shop/react-shop-common';
 import Carousel from 'react-material-ui-carousel';
 import { imageOne, imageThree, imageTwo } from '../../../assets';
+import { Container } from '@mui/material';
 
 export const Landing = () => (
   <>
@@ -10,6 +15,10 @@ export const Landing = () => (
       <ImageCard altText="" imageSrc={imageTwo} />
       <ImageCard altText="" imageSrc={imageThree} />
     </Carousel>
+
+    <Container>
+      <OurProductRangeMenu></OurProductRangeMenu>
+    </Container>
   </>
 );
 

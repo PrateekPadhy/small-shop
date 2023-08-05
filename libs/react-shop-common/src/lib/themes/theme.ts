@@ -56,5 +56,38 @@ export const appTheme = createTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(', '),
+    fontWeightRegular: 500,
+    h1: {
+      fontSize: '32px',
+      lineHeight: '40px',
+      fontWeight: 'bold',
+      fontStyle: 'normal',
+    },
+    h2: {
+      fontSize: '28px',
+      lineHeight: '32px',
+      fontWeight: 'bold',
+    },
+    h3: {
+      fontSize: '24px',
+      lineHeight: '32px',
+      fontWeight: 'bold',
+    },
+    h4: {
+      fontSize: '20px',
+      lineHeight: '28px',
+      fontWeight: 'bold',
+      fontStyle: 'normal',
+    },
+    h5: {
+      fontSize: '18px',
+      lineHeight: '24px',
+      fontWeight: 'bold',
+    },
+    h6: {
+      fontSize: '16px',
+      lineHeight: '24px',
+      fontWeight: 'bold',
+    },
   },
 });
